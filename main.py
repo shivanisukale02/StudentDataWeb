@@ -4,15 +4,15 @@ app=Flask(__name__)
 
 @app.route("/")
 def Student():
-    return "student info"
+    return render_template("StudInfo.html")
 
 @app.route("/search")
 def SearchByAdno():
-    return "search by admn no"
+    return render_template("Search.html")
 
 @app.route("/delete")
 def DeletebyAdno():
-    return "delete by admo no"
+    return render_template("Delete.html")
 
 if __name__=="__main__":
     app.run()
